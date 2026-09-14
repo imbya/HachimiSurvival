@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e53fb90f368ecc409065abd47dc2f76, type: 3}
+  m_Name: R01_CombatConfig
+  m_EditorClassIdentifier: Assembly-CSharp::R01CombatConfig
+  arenaSize: {x: 18, y: 10}
+  playerRadius: 0.35
+  playerMaxHealth: 100
+  playerSpeed: 4.5
+  dodgeDistance: 2.4
+  dodgeDuration: 0.18
+  dodgeCooldown: 3
+  attackCycle: 1
+  attackGap: 0.1
+  attackStartup: 0.12
+  attackRange: 6
+  attackWidth: 0.5
+  attackSpeed: 12
+  attackDamage: 8
+  attacksPerCycle: 2
+  duelRadius: 0.45
+  duelMaxHealth: 64
+  duelSpeed: 2
+  duelApproachDistance: 3.4
+  duelObserveDuration: 0.3
+  duelLockDuration: 0.5
+  pounceLength: 4
+  pounceWidth: 0.8
+  pounceSpeed: 10
+  pounceDamage: 20
+  duelRecoveryDuration: 0.8
+  duelInterruptedDuration: 1.2
+  gruntRadius: 0.3
+  gruntMaxHealth: 16
+  gruntSpeed: 1.6
+  gruntContactDamage: 8
+  gruntContactCooldown: 0.8
+  hissKnockbackDistance: 1
+  hissEnergyMax: 100
+  startingHissEnergy: 100
+  hissRadius: 3.5
+  hissBuffDuration: 6
+  hissAttackSpeedMultiplier: 1.3
+  hissAttackRangeMultiplier: 1.15
+  chargePerDamage: 0.07
+  chargePerKill: 1
+  playerDamageProtection: 0.5
+  entryDelay: 0.6
+  ordinaryTestKnockback: 0.5

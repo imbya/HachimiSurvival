@@ -1,6 +1,6 @@
 # 哈基米大暴走 · Hachimi Survival
 
-Unity 2D 猫梗生存游戏。当前迭代 **R01：对峙与反攻试玩**。目前完成设计与任务拆分，尚无游戏工程或试玩构建。
+Unity 2D 猫梗生存游戏。当前迭代 **R01：对峙与反攻试玩**。Unity 工程已在 `HachimiSurvival/` 创建，程序首个可运行版本正在推进。
 
 1. 读[总体方案](Docs/PROJECT.md)，了解目标和范围。
 2. 读[协作方式](Docs/WORKFLOW.md)，了解分工与交付。
@@ -11,7 +11,7 @@ Unity 2D 猫梗生存游戏。当前迭代 **R01：对峙与反攻试玩**。目
 | `Docs/` | 当前总体方案、分主题设计与素材来源 |
 | `plan/` | 当前迭代尚未完成或待 review 的任务 |
 | `archive/` | 已完成任务与历史方案，只供追溯 |
-| `Game/` | 后续由程序任务创建的 Unity 工程 |
+| `HachimiSurvival/` | Unity 工程 |
 | `SourceAssets/` | 后续由资源任务创建的美术、音频源文件 |
 | `Builds/` | 后续生成的本地试玩包，不作为源代码 |
 

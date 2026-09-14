@@ -6,12 +6,12 @@
 
 ## 交付位置
 
-- Unity 工程：`Game/`，目标 Unity 6.3 LTS；场景 `Game/Assets/Hachimi/Scenes/R01_Combat.unity`。
-- 程序与配置：`Game/Assets/Hachimi/Scripts/`、`Game/Assets/Hachimi/Settings/`；一个可在 Inspector 调整的配置即可。
-- 素材原件：`SourceAssets/Art/R01/`、`SourceAssets/Audio/R01/`；程序导入 `Game/Assets/Hachimi/Art/`、`Audio/`。
+- Unity 工程：`HachimiSurvival/`，目标 Unity 6.3 LTS；场景 `HachimiSurvival/Assets/Hachimi/Scenes/R01_Combat.unity`。
+- 程序与配置：`HachimiSurvival/Assets/Hachimi/Scripts/`、`HachimiSurvival/Assets/Hachimi/Settings/`；一个可在 Inspector 调整的配置即可。
+- 素材原件：`SourceAssets/Art/R01/`、`SourceAssets/Audio/R01/`；程序导入 `HachimiSurvival/Assets/Art/R01/`、`HachimiSurvival/Assets/Audio/R01/`。
 - 构建：`Builds/R01/Windows/`，含启动程序及完整依赖文件；交付记录注明实际启动文件名。
 
-上述目录由对应执行任务创建，目前均未交付。程序先用简单几何占位，不等美术／音频。
+上述目录由对应执行任务创建；程序先用简单几何占位，不等美术／音频。
 
 ## 起始配置
 

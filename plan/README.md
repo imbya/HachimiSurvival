@@ -4,8 +4,8 @@
 
 | ID | 任务 | 状态／执行者 | 依赖 |
 | --- | --- | --- | --- |
-| R01-P01 | [创建 Unity 工程与可运行空场景](R01/programming/P01_Project.md) | 待认领／— | 本机可用 Unity 6.3 LTS |
-| R01-P02 | [实现对峙与反攻](R01/programming/P02_Combat.md) | 待认领／— | P01 |
+| R01-P01 | [创建 Unity 工程与可运行空场景](R01/programming/P01_Project.md) | 待 review／Codex | 本机可用 Unity 6.3 LTS |
+| R01-P02 | [实现对峙与反攻](R01/programming/P02_Combat.md) | 进行中／Codex | P01 |
 | R01-A01 | [最小猫贴纸资源](R01/art/A01_Cat_Sprites.md) | 待认领／— | 无，可与 P01/P02 并行 |
 | R01-S01 | [最小战斗音效](R01/audio/S01_Combat_Audio.md) | 待认领／— | 无，可与 P01/P02 并行 |
 | R01-P03 | [资源接入、试玩构建与实测](R01/programming/P03_Playable.md) | 待认领／— | P02；A01/S01 缺失时可先出占位构建 |
