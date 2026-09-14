@@ -1,0 +1,778 @@
+{
+  "delivery": "R01-S01 original synthetic SFX candidate v1",
+  "production_date": "2026-09-14",
+  "seed": 26091401,
+  "tools": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "audio_model": null,
+  "external_recordings": [],
+  "human_listening": "not_performed",
+  "unity_test": "not_performed",
+  "true_peak_method": "8x scipy.signal.resample_poly, Kaiser beta 10; estimated, not certified",
+  "loudness_method": "10ms active K-weighted RMS proxy, no integrated LUFS or subjective equivalence claim",
+  "clips": [
+    {
+      "file": "hiss.wav",
+      "description": "Q 哈气：气流嘶声、短促喷气起音，无人声台词",
+      "sample_rate_hz": 48000,
+      "bit_depth": 16,
+      "channels": 1,
+      "frames": 18240,
+      "duration_seconds": 0.38,
+      "file_bytes": 36524,
+      "sample_peak_dbfs": -3.229,
+      "true_peak_8x_estimate_dbtp": -3.22,
+      "rms_dbfs": -17.891,
+      "active_k_weighted_rms_db_proxy_not_lufs": -14.076,
+      "dc_offset_linear": -8.365564179002193e-08,
+      "dc_offset_dbfs": -141.55,
+      "first_sample": 0.0,
+      "last_sample": 0.0,
+      "leading_below_minus60_dbfs_ms": 0.292,
+      "trailing_below_minus60_dbfs_ms": 6.396,
+      "tail_last_5ms_rms_dbfs": -89.532,
+      "clipped_samples": 0,
+      "checks": {
+        "format": true,
+        "duration": true,
+        "headroom_at_least_3_db": true,
+        "zero_boundary_samples": true,
+        "dc_below_minus80_dbfs": true,
+        "no_digital_clipping": true,
+        "onset_under_10_ms": true,
+        "unused_tail_under_25_ms": true,
+        "tail_last_5ms_below_minus40_dbfs": true
+      },
+      "technical_pass": true,
+      "mastering": {
+        "gain_db": -8.933805126889302,
+        "target_active_k_rms_db": -14.0
+      }
+    },
+    {
+      "file": "laowu.wav",
+      "description": "老吴叫：原创短喵呜拟声，aow→u 共振峰收拢；不是原梗录音",
+      "sample_rate_hz": 48000,
+      "bit_depth": 16,
+      "channels": 1,
+      "frames": 15360,
+      "duration_seconds": 0.32,
+      "file_bytes": 30764,
+      "sample_peak_dbfs": -3.296,
+      "true_peak_8x_estimate_dbtp": -3.287,
+      "rms_dbfs": -14.821,
+      "active_k_weighted_rms_db_proxy_not_lufs": -14.0,
+      "dc_offset_linear": -1.1126200358072917e-07,
+      "dc_offset_dbfs": -139.073,
+      "first_sample": 0.0,
+      "last_sample": 0.0,
+      "leading_below_minus60_dbfs_ms": 0.667,
+      "trailing_below_minus60_dbfs_ms": 5.375,
+      "tail_last_5ms_rms_dbfs": -71.249,
+      "clipped_samples": 0,
+      "checks": {
+        "format": true,
+        "duration": true,
+        "headroom_at_least_3_db": true,
+        "zero_boundary_samples": true,
+        "dc_below_minus80_dbfs": true,
+        "no_digital_clipping": true,
+        "onset_under_10_ms": true,
+        "unused_tail_under_25_ms": true,
+        "tail_last_5ms_below_minus40_dbfs": true
+      },
+      "technical_pass": true,
+      "mastering": {
+        "gain_db": -6.9517481266968755,
+        "target_active_k_rms_db": -14.0
+      }
+    },
+    {
+      "file": "enemy_warn.wav",
+      "description": "对峙预警：两下略带不协和的中频脉冲，区别于哈气",
+      "sample_rate_hz": 48000,
+      "bit_depth": 16,
+      "channels": 1,
+      "frames": 11040,
+      "duration_seconds": 0.23,
+      "file_bytes": 22124,
+      "sample_peak_dbfs": -4.249,
+      "true_peak_8x_estimate_dbtp": -4.231,
+      "rms_dbfs": -15.264,
+      "active_k_weighted_rms_db_proxy_not_lufs": -14.0,
+      "dc_offset_linear": 1.8797058990036233e-07,
+      "dc_offset_dbfs": -134.518,
+      "first_sample": 0.0,
+      "last_sample": 0.0,
+      "leading_below_minus60_dbfs_ms": 0.229,
+      "trailing_below_minus60_dbfs_ms": 7.562,
+      "tail_last_5ms_rms_dbfs": -107.121,
+      "clipped_samples": 0,
+      "checks": {
+        "format": true,
+        "duration": true,
+        "headroom_at_least_3_db": true,
+        "zero_boundary_samples": true,
+        "dc_below_minus80_dbfs": true,
+        "no_digital_clipping": true,
+        "onset_under_10_ms": true,
+        "unused_tail_under_25_ms": true,
+        "tail_last_5ms_below_minus40_dbfs": true
+      },
+      "technical_pass": true,
+      "mastering": {
+        "gain_db": -5.1226396105099505,
+        "target_active_k_rms_db": -14.0
+      }
+    },
+    {
+      "file": "interrupt.wav",
+      "description": "成功打断：硬质短扣击与干净上行谐音确认",
+      "sample_rate_hz": 48000,
+      "bit_depth": 16,
+      "channels": 1,
+      "frames": 8640,
+      "duration_seconds": 0.18,
+      "file_bytes": 17324,
+      "sample_peak_dbfs": -3.575,
+      "true_peak_8x_estimate_dbtp": -3.554,
+      "rms_dbfs": -16.398,
+      "active_k_weighted_rms_db_proxy_not_lufs": -14.0,
+      "dc_offset_linear": 1.8013848198784722e-07,
+      "dc_offset_dbfs": -134.888,
+      "first_sample": 0.0,
+      "last_sample": 0.0,
+      "leading_below_minus60_dbfs_ms": 0.25,
+      "trailing_below_minus60_dbfs_ms": 5.604,
+      "tail_last_5ms_rms_dbfs": -75.416,
+      "clipped_samples": 0,
+      "checks": {
+        "format": true,
+        "duration": true,
+        "headroom_at_least_3_db": true,
+        "zero_boundary_samples": true,
+        "dc_below_minus80_dbfs": true,
+        "no_digital_clipping": true,
+        "onset_under_10_ms": true,
+        "unused_tail_under_25_ms": true,
+        "tail_last_5ms_below_minus40_dbfs": true
+      },
+      "technical_pass": true,
+      "mastering": {
+        "gain_db": -3.206950991225961,
+        "target_active_k_rms_db": -14.0
+      }
+    },
+    {
+      "file": "player_hurt.wav",
+      "description": "玩家受伤：短下坠拟声叠柔和钝击",
+      "sample_rate_hz": 48000,
+      "bit_depth": 16,
+      "channels": 1,
+      "frames": 8640,
+      "duration_seconds": 0.18,
+      "file_bytes": 17324,
+      "sample_peak_dbfs": -3.245,
+      "true_peak_8x_estimate_dbtp": -3.22,
+      "rms_dbfs": -16.881,
+      "active_k_weighted_rms_db_proxy_not_lufs": -14.942,
+      "dc_offset_linear": -5.651403356481482e-08,
+      "dc_offset_dbfs": -144.957,
+      "first_sample": 0.0,
+      "last_sample": 0.0,
+      "leading_below_minus60_dbfs_ms": 0.188,
+      "trailing_below_minus60_dbfs_ms": 10.0,
+      "tail_last_5ms_rms_dbfs": -95.66,
+      "clipped_samples": 0,
+      "checks": {
+        "format": true,
+        "duration": true,
+        "headroom_at_least_3_db": true,
+        "zero_boundary_samples": true,
+        "dc_below_minus80_dbfs": true,
+        "no_digital_clipping": true,
+        "onset_under_10_ms": true,
+        "unused_tail_under_25_ms": true,
+        "tail_last_5ms_below_minus40_dbfs": true
+      },
+      "technical_pass": true,
+      "mastering": {
+        "gain_db": -4.241702649564577,
+        "target_active_k_rms_db": -14.0
+      }
+    },
+    {
+      "file": "hit.wav",
+      "description": "普通命中：低中频轻拍击，短尾，无尖锐金属长鸣",
+      "sample_rate_hz": 48000,
+      "bit_depth": 16,
+      "channels": 1,
+      "frames": 4320,
+      "duration_seconds": 0.09,
+      "file_bytes": 8684,
+      "sample_peak_dbfs": -3.225,
+      "true_peak_8x_estimate_dbtp": -3.22,
+      "rms_dbfs": -16.753,
+      "active_k_weighted_rms_db_proxy_not_lufs": -15.936,
+      "dc_offset_linear": 3.532127097800926e-08,
+      "dc_offset_dbfs": -149.039,
+      "first_sample": 0.0,
+      "last_sample": 0.0,
+      "leading_below_minus60_dbfs_ms": 0.167,
+      "trailing_below_minus60_dbfs_ms": 3.354,
+      "tail_last_5ms_rms_dbfs": -59.321,
+      "clipped_samples": 0,
+      "checks": {
+        "format": true,
+        "duration": true,
+        "headroom_at_least_3_db": true,
+        "zero_boundary_samples": true,
+        "dc_below_minus80_dbfs": true,
+        "no_digital_clipping": true,
+        "onset_under_10_ms": true,
+        "unused_tail_under_25_ms": true,
+        "tail_last_5ms_below_minus40_dbfs": true
+      },
+      "technical_pass": true,
+      "mastering": {
+        "gain_db": -3.2013191505390277,
+        "target_active_k_rms_db": -15.0
+      }
+    }
+  ],
+  "preview": {
+    "single_sections": [
+      {
+        "file": "hiss.wav",
+        "start_seconds": 0.35,
+        "end_seconds": 0.73
+      },
+      {
+        "file": "laowu.wav",
+        "start_seconds": 1.45,
+        "end_seconds": 1.77
+      },
+      {
+        "file": "enemy_warn.wav",
+        "start_seconds": 2.55,
+        "end_seconds": 2.78
+      },
+      {
+        "file": "interrupt.wav",
+        "start_seconds": 3.65,
+        "end_seconds": 3.83
+      },
+      {
+        "file": "player_hurt.wav",
+        "start_seconds": 4.75,
+        "end_seconds": 4.93
+      },
+      {
+        "file": "hit.wav",
+        "start_seconds": 5.85,
+        "end_seconds": 5.94
+      }
+    ],
+    "repeat_sections": [
+      {
+        "file": "hiss.wav",
+        "start_seconds": 0.35,
+        "end_seconds": 2.38,
+        "count": 4,
+        "interval_seconds": 0.55
+      },
+      {
+        "file": "laowu.wav",
+        "start_seconds": 3.18,
+        "end_seconds": 7.346,
+        "count": 6,
+        "interval_seconds": 0.7692307692307692
+      },
+      {
+        "file": "enemy_warn.wav",
+        "start_seconds": 8.146,
+        "end_seconds": 10.776,
+        "count": 4,
+        "interval_seconds": 0.8
+      },
+      {
+        "file": "interrupt.wav",
+        "start_seconds": 11.576,
+        "end_seconds": 13.506,
+        "count": 6,
+        "interval_seconds": 0.35
+      },
+      {
+        "file": "player_hurt.wav",
+        "start_seconds": 14.306,
+        "end_seconds": 16.986,
+        "count": 6,
+        "interval_seconds": 0.5
+      },
+      {
+        "file": "hit.wav",
+        "start_seconds": 17.786,
+        "end_seconds": 19.016,
+        "count": 20,
+        "interval_seconds": 0.06
+      }
+    ],
+    "repeat_global_gain_db": -0.0004,
+    "mix_clip_gains_db_starting_points_only": {
+      "hiss": -10.0,
+      "laowu": -12.0,
+      "enemy_warn": -8.0,
+      "interrupt": -10.0,
+      "player_hurt": -8.0,
+      "hit": -17.0
+    },
+    "mix_global_gain_db": 0.0,
+    "mix_events": [
+      {
+        "time": 0.3,
+        "file": "laowu.wav"
+      },
+      {
+        "time": 0.52,
+        "file": "hit.wav"
+      },
+      {
+        "time": 0.58,
+        "file": "hit.wav"
+      },
+      {
+        "time": 0.64,
+        "file": "hit.wav"
+      },
+      {
+        "time": 0.7,
+        "file": "hit.wav"
+      },
+      {
+        "time": 0.76,
+        "file": "hit.wav"
+      },
+      {
+        "time": 0.82,
+        "file": "hit.wav"
+      },
+      {
+        "time": 0.88,
+        "file": "hit.wav"
+      },
+      {
+        "time": 0.94,
+        "file": "hit.wav"
+      },
+      {
+        "time": 1.0,
+        "file": "hit.wav"
+      },
+      {
+        "time": 1.06,
+        "file": "hit.wav"
+      },
+      {
+        "time": 1.06923,
+        "file": "laowu.wav"
+      },
+      {
+        "time": 1.12,
+        "file": "hit.wav"
+      },
+      {
+        "time": 1.18,
+        "file": "hit.wav"
+      },
+      {
+        "time": 1.2,
+        "file": "enemy_warn.wav"
+      },
+      {
+        "time": 1.24,
+        "file": "hit.wav"
+      },
+      {
+        "time": 1.3,
+        "file": "hit.wav"
+      },
+      {
+        "time": 1.36,
+        "file": "hit.wav"
+      },
+      {
+        "time": 1.42,
+        "file": "hit.wav"
+      },
+      {
+        "time": 1.48,
+        "file": "hit.wav"
+      },
+      {
+        "time": 1.54,
+        "file": "hit.wav"
+      },
+      {
+        "time": 1.6,
+        "file": "hit.wav"
+      },
+      {
+        "time": 1.66,
+        "file": "hit.wav"
+      },
+      {
+        "time": 1.72,
+        "file": "hiss.wav"
+      },
+      {
+        "time": 1.72,
+        "file": "hit.wav"
+      },
+      {
+        "time": 1.735,
+        "file": "interrupt.wav"
+      },
+      {
+        "time": 1.78,
+        "file": "hit.wav"
+      },
+      {
+        "time": 1.83846,
+        "file": "laowu.wav"
+      },
+      {
+        "time": 1.84,
+        "file": "hit.wav"
+      },
+      {
+        "time": 1.9,
+        "file": "hit.wav"
+      },
+      {
+        "time": 1.96,
+        "file": "hit.wav"
+      },
+      {
+        "time": 2.02,
+        "file": "hit.wav"
+      },
+      {
+        "time": 2.08,
+        "file": "hit.wav"
+      },
+      {
+        "time": 2.14,
+        "file": "hit.wav"
+      },
+      {
+        "time": 2.2,
+        "file": "hit.wav"
+      },
+      {
+        "time": 2.26,
+        "file": "hit.wav"
+      },
+      {
+        "time": 2.32,
+        "file": "hit.wav"
+      },
+      {
+        "time": 2.38,
+        "file": "hit.wav"
+      },
+      {
+        "time": 2.44,
+        "file": "hit.wav"
+      },
+      {
+        "time": 2.5,
+        "file": "hit.wav"
+      },
+      {
+        "time": 2.56,
+        "file": "hit.wav"
+      },
+      {
+        "time": 2.60769,
+        "file": "laowu.wav"
+      },
+      {
+        "time": 2.62,
+        "file": "hit.wav"
+      },
+      {
+        "time": 2.68,
+        "file": "hit.wav"
+      },
+      {
+        "time": 2.74,
+        "file": "hit.wav"
+      },
+      {
+        "time": 2.8,
+        "file": "hit.wav"
+      },
+      {
+        "time": 2.86,
+        "file": "hit.wav"
+      },
+      {
+        "time": 2.92,
+        "file": "hit.wav"
+      },
+      {
+        "time": 2.98,
+        "file": "hit.wav"
+      },
+      {
+        "time": 3.04,
+        "file": "hit.wav"
+      },
+      {
+        "time": 3.1,
+        "file": "hit.wav"
+      },
+      {
+        "time": 3.16,
+        "file": "hit.wav"
+      },
+      {
+        "time": 3.22,
+        "file": "hit.wav"
+      },
+      {
+        "time": 3.25,
+        "file": "enemy_warn.wav"
+      },
+      {
+        "time": 3.28,
+        "file": "hit.wav"
+      },
+      {
+        "time": 3.34,
+        "file": "hit.wav"
+      },
+      {
+        "time": 3.37692,
+        "file": "laowu.wav"
+      },
+      {
+        "time": 3.4,
+        "file": "hit.wav"
+      },
+      {
+        "time": 3.46,
+        "file": "hit.wav"
+      },
+      {
+        "time": 3.52,
+        "file": "hit.wav"
+      },
+      {
+        "time": 3.58,
+        "file": "hit.wav"
+      },
+      {
+        "time": 3.64,
+        "file": "hit.wav"
+      },
+      {
+        "time": 3.7,
+        "file": "hit.wav"
+      },
+      {
+        "time": 3.76,
+        "file": "hit.wav"
+      },
+      {
+        "time": 3.82,
+        "file": "hit.wav"
+      },
+      {
+        "time": 3.88,
+        "file": "hit.wav"
+      },
+      {
+        "time": 3.94,
+        "file": "hit.wav"
+      },
+      {
+        "time": 4.0,
+        "file": "player_hurt.wav"
+      },
+      {
+        "time": 4.0,
+        "file": "hit.wav"
+      },
+      {
+        "time": 4.06,
+        "file": "hit.wav"
+      },
+      {
+        "time": 4.12,
+        "file": "hit.wav"
+      },
+      {
+        "time": 4.14615,
+        "file": "laowu.wav"
+      },
+      {
+        "time": 4.18,
+        "file": "hit.wav"
+      },
+      {
+        "time": 4.24,
+        "file": "hit.wav"
+      },
+      {
+        "time": 4.3,
+        "file": "hit.wav"
+      },
+      {
+        "time": 4.36,
+        "file": "hit.wav"
+      },
+      {
+        "time": 4.42,
+        "file": "hit.wav"
+      },
+      {
+        "time": 4.48,
+        "file": "hit.wav"
+      },
+      {
+        "time": 4.54,
+        "file": "hit.wav"
+      },
+      {
+        "time": 4.6,
+        "file": "hit.wav"
+      },
+      {
+        "time": 4.66,
+        "file": "hit.wav"
+      },
+      {
+        "time": 4.72,
+        "file": "hit.wav"
+      },
+      {
+        "time": 4.78,
+        "file": "hit.wav"
+      },
+      {
+        "time": 4.84,
+        "file": "hit.wav"
+      },
+      {
+        "time": 4.9,
+        "file": "hit.wav"
+      },
+      {
+        "time": 4.91538,
+        "file": "laowu.wav"
+      },
+      {
+        "time": 4.96,
+        "file": "hit.wav"
+      },
+      {
+        "time": 5.02,
+        "file": "hit.wav"
+      },
+      {
+        "time": 5.05,
+        "file": "enemy_warn.wav"
+      },
+      {
+        "time": 5.08,
+        "file": "hit.wav"
+      },
+      {
+        "time": 5.14,
+        "file": "hit.wav"
+      },
+      {
+        "time": 5.2,
+        "file": "hit.wav"
+      },
+      {
+        "time": 5.26,
+        "file": "hit.wav"
+      },
+      {
+        "time": 5.32,
+        "file": "hit.wav"
+      },
+      {
+        "time": 5.38,
+        "file": "hit.wav"
+      },
+      {
+        "time": 5.44,
+        "file": "hit.wav"
+      },
+      {
+        "time": 5.5,
+        "file": "hit.wav"
+      },
+      {
+        "time": 5.53,
+        "file": "hiss.wav"
+      },
+      {
+        "time": 5.545,
+        "file": "interrupt.wav"
+      },
+      {
+        "time": 5.56,
+        "file": "hit.wav"
+      },
+      {
+        "time": 5.62,
+        "file": "hit.wav"
+      },
+      {
+        "time": 5.68,
+        "file": "hit.wav"
+      },
+      {
+        "time": 5.68462,
+        "file": "laowu.wav"
+      },
+      {
+        "time": 5.74,
+        "file": "hit.wav"
+      },
+      {
+        "time": 5.8,
+        "file": "hit.wav"
+      },
+      {
+        "time": 5.86,
+        "file": "hit.wav"
+      },
+      {
+        "time": 5.92,
+        "file": "hit.wav"
+      },
+      {
+        "time": 5.98,
+        "file": "hit.wav"
+      },
+      {
+        "time": 6.04,
+        "file": "hit.wav"
+      },
+      {
+        "time": 6.1,
+        "file": "hit.wav"
+      }
+    ],
+    "note": "Offline playback material only. No Unity implementation or human listening claimed."
+  },
+  "all_technical_checks_pass": true
+}

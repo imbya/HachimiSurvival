@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hachimi Survival · R01 音效试听</title>
+<style>
+:root{color-scheme:light dark;font-family:system-ui,sans-serif;line-height:1.6}
+body{max-width:840px;margin:2rem auto;padding:0 1.2rem}h1{line-height:1.3}
+section{margin:1.5rem 0;padding:1rem;border:1px solid #8886;border-radius:.6rem}
+audio{display:block;width:100%;max-width:620px;margin:.5rem 0}small{opacity:.8}
+code{overflow-wrap:anywhere}h2{font-size:1.15rem;margin:0 0 .5rem}
+</style>
+</head>
+<body>
+<h1>R01 战斗音效 · 首版候选</h1>
+<p>48 kHz · 16-bit PCM · 单声道。请先调低系统音量。人耳听审、猫梗识别度与 Unity 混音仍待验证。</p>
+<p>先完整拉取 Git LFS 音频，再在本地浏览器打开本页。保留目录结构；本页不访问外部资源，也不自动播放。只有播放器主动播放时才暂停其他播放器。</p>
+<section>
+<h2>单次试听 · 7.20 秒</h2>
+<p>顺序：哈气 → 老吴叫 → 预警 → 打断 → 受伤 → 命中。</p>
+<audio controls preload="none" src="preview_single.wav">浏览器不支持音频播放。</audio>
+</section>
+<section>
+<h2>连续触发 · 19.82 秒</h2>
+<p>按上述顺序分组重复。老吴叫约 0.769 秒一次，普通命中每 60 毫秒一次；无随机变调。</p>
+<audio controls preload="none" src="preview_repeat.wav">浏览器不支持音频播放。</audio>
+</section>
+<section>
+<h2>离线混合 · 6.50 秒</h2>
+<p>带独立增益的战斗混合模拟，不是 Unity 实测或游戏录音。</p>
+<audio controls preload="none" src="preview_mix.wav">浏览器不支持音频播放。</audio>
+</section>
+<section>
+<h2>六个原件</h2>
+<label>hiss.wav · Q 哈气 · 0.38 秒<audio controls preload="none" src="../hiss.wav"></audio></label>
+<label>laowu.wav · 原创短喵呜拟声 · 0.32 秒<audio controls preload="none" src="../laowu.wav"></audio></label>
+<label>enemy_warn.wav · 对峙预警 · 0.23 秒<audio controls preload="none" src="../enemy_warn.wav"></audio></label>
+<label>interrupt.wav · 成功打断 · 0.18 秒<audio controls preload="none" src="../interrupt.wav"></audio></label>
+<label>player_hurt.wav · 玩家受伤 · 0.18 秒<audio controls preload="none" src="../player_hurt.wav"></audio></label>
+<label>hit.wav · 普通命中 · 0.09 秒<audio controls preload="none" src="../hit.wav"></audio></label>
+</section>
+<p><a href="../delivery.md">制作与交付记录</a> · <a href="../qa.json">文件检查</a> · <a href="preview_timeline.json">试听时间轴</a></p>
+<small>所有声音为原创数字合成，无外部录音。播放器不做响度归一化；通过文件级检查不代表主观等响或游戏内可读性已验收。</small>
+<script>
+'use strict';
+const players = Array.from(document.querySelectorAll('audio'));
+for (const player of players) {
+  player.addEventListener('play', () => {
+    for (const other of players) { if (other !== player) other.pause(); }
+  });
+}
+</script>
+</body>
+</html>
